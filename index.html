@@ -3,11 +3,19 @@
 
 <head>
   <title>K9ForFun</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/fanoe.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 
   <script src="https://unpkg.com/vue"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -16,16 +24,21 @@
 
 <body>
   <div id="app">
-    <top-navigation></top-navigation>
+    <header-component></header-component>
+                  
     <router-view></router-view>
+    
+    <footer-component></footer-component>
   </div>
 
   <script>
     // https://router.vuejs.org/en/essentials/named-routes.html
     const routes = [
       { path: '*', name: 'home', component: { template: '<start-page></start-page>' } },
-      { path: '/foo', name: 'foo', component: { template: '<welcome-page></welcome-page>' } },
-      { path: '/bar', name: 'bar', component: { template: '<div>BAR</div>' } }
+      { path: '/om', name: 'om', component: { template: '<about-us></about-us>' } },
+      { path: '/boka', name: 'boka', component: { template: '<book-us></book-us>' } },
+      { path: '/tips', name: 'tips', component: { template: '<tips-and-tricks></tips-and-tricks>' } },
+      { path: '/contact', name: 'contact', component: { template: '<contact></contact>' } },
     ]
 
     const router = new VueRouter({
@@ -36,14 +49,18 @@
     Vue.use(httpVueLoader);
     const app = new Vue({
       components: [
-        'url:top-navigation.vue',
-        'url:start-page.vue',
-        'url:welcome-page.vue'
-        ]
-      ,
+        'url:header-component.vue',
+        'url:footer-component.vue',
+        'url:about-us.vue',
+        'url:book-us.vue',
+        'url:tips-and-tricks.vue',
+        'url:contact.vue',
+        'url:start-page.vue'                
+      ],
       router: router
     }).$mount('#app')
 
   </script>
 </body>
+
 </html>

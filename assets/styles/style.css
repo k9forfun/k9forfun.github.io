@@ -1,0 +1,29 @@
+/* Go crazy with your own styles here */
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+html {
+	background-color: #333333;
+}
+
+footer.dark {
+	background-color: #333333;
+}
+
+@media (min-width: 768px){
+	.dark, .light, .yellow, .blue, .purple {
+    	padding: 20px 0;
+	}
+}
+
+.dark, .light, .yellow, .blue, .purple {
+    padding: 20px 0;
+}
+
+@media (min-width: 992px){
+	header {
+		padding: 0px 0;
+	}
+}
+
+header {
+    padding: 0px 0;
+}

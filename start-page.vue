@@ -16,7 +16,7 @@
             <div class="col-md-4 column">
               <div >
                 <h2>Om oss</h2>
-                <p>Här kan du läsa lite <router-link to="om">Om oss</router-link> i K9forfun</p>
+                <p>Här kan du läsa lite <router-link :to="{name: 'about'}">Om oss</router-link> i K9forfun</p>
                 <p> </p>
               </div>
             </div>            
@@ -26,14 +26,14 @@
                 <h2>Boka oss</h2>
                 <p>Vi erbjuder olika alternativ till träning.</p>
                 <p>Om ni vill att vi ska komma ut till er klubb, eller annan plats, så har vi lite olika erbjudanden.</p>
-                <p>Läs mer <router-link to="boka">här</router-link>. </p>
+                <p>Läs mer <router-link :to="{name: 'book'}">här</router-link>. </p>
               </div>
             </div>            
             
             <div class="col-md-4 column">
               <div >
                 <h2>Tips &amp; Tricks</h2>
-                <p>Är ni nyfikna på oss. <router-link to="tips">Här</router-link> hittar du lite inspiration</p>
+                <p>Är ni nyfikna på oss. <router-link :to="{name: 'tips'}">Här</router-link> hittar du lite inspiration</p>
               </div>
             </div>    
 

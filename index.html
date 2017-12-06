@@ -45,10 +45,10 @@
     // https://router.vuejs.org/en/essentials/named-routes.html
     const routes = [
       { path: '*', name: 'home', component: { template: '<start-page></start-page>' } },
-      { path: '/om', name: 'om', component: { template: '<about-us></about-us>' } },
-      { path: '/boka', name: 'boka', component: { template: '<book-us></book-us>' } },
-      { path: '/tips', name: 'tips', component: { template: '<tips-and-tricks></tips-and-tricks>' } },
-      { path: '/kontakt', name: 'contact', component: { template: '<contact></contact>' } },
+      { path: '/om-oss', name: 'about', component: { template: '<about-us></about-us>' } },
+      { path: '/boka-oss', name: 'book', component: { template: '<book-us></book-us>' } },
+      { path: '/tips-och-tricks', name: 'tips', component: { template: '<tips-and-tricks></tips-and-tricks>' } },
+      { path: '/kontakta-oss', name: 'contact', component: { template: '<contact></contact>' } },
     ]
 
     const router = new VueRouter({

@@ -15,7 +15,7 @@
                 <strong>I samarbete med</strong>
                 <ul>        
                     <li>
-                        <a href="https://norrahund.wordpress.com/" target="_blank">
+                        <a href="http://norrastockholmshundcenter.se/" target="_blank">
                             Norra Stockholms Hundcenter<br>
                             <img src="assets/media/norra_stockholms_hundcenter.jpg"></a>
                     </li>

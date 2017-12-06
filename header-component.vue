@@ -12,7 +12,7 @@
             <nav>
                 <ul class="level-2">                    
                     <li>
-                        <router-link to="contact">Kontakta oss</router-link>
+                        <router-link :to="{name: 'contact'}">Kontakta oss</router-link>
                     </li>
                 </ul>
             </nav>
